@@ -1,0 +1,27 @@
+h1,h2,h3,h4,h5,h6 {
+  color: $black;
+  span {white-space: nowrap;}
+}
+
+
+/*** PRE-DEFINED CLASSES ***/
+.flex {display: flex;}
+.inline {display: inline-block;}
+.hidden {display: none;}
+.disabled {pointer-events: none;}
+.text-left{text-align: left!important}
+.text-center{text-align: center!important}
+.text-right{text-align: right!important}
+.nowrap{white-space: nowrap!important;}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.et_pb_section {
+  background: transparent;
+}
+.et_pb_row {
+  max-width: $max-width;
+}
