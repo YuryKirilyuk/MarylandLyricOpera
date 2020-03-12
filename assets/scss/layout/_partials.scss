@@ -24,4 +24,73 @@ h1,h2,h3,h4,h5,h6 {
 }
 .et_pb_row {
   max-width: $max-width;
+  @media screen and (max-width: 425px) {width: 90%;}
+}
+
+.section-title {
+  margin-bottom: 15px;
+
+  h3 {
+    color: #101010;
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: -2px;
+    line-height: 1.55;
+    position: relative;
+    text-align: center;
+    &:after {
+      background: #752182;
+      bottom: -5px;
+      content: '';
+      height: 1px;
+      margin: auto;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: 130px;
+    }
+  }
+}//.section-title
+
+.page-title {
+  align-items: flex-end;
+  display: flex;
+  height: 162px;
+  justify-content: center;
+  padding: 0 !important;
+  .et_pb_row {
+    align-items: flex-end;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0 !important;
+  }
+  h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: -3px;
+    line-height: 2.2;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    @media screen and (max-width: 768px) {font-size: 50px;}
+    @media screen and (max-width: 375px) {
+      line-height: 1.2;
+      padding-bottom: 20px;
+    }
+    &:after {
+      background: #913ca7;
+      bottom: 0;
+      content: '';
+      height: 7px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      transform: translateY(50%);
+      width: 130px;
+    }
+  }
 }
