@@ -319,6 +319,7 @@
 					do_action( 'et_header_top' );
 
 					?>
+
 				</div> <!-- #et-top-navigation -->
 
 
@@ -371,8 +372,7 @@
 		 * Filters the HTML output for the main header.
 		 *
 		 * @since 3.10
-		 *
-		 * @param string $main_header
+		 *mobile_menu
 		 */
 		echo et_core_intentionally_unescaped( apply_filters( 'et_html_main_header', $main_header ), 'html' );
 	?>

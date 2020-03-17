@@ -139,6 +139,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 @media screen and (max-width: 1500px) { #main-header .logo_container { margin-right: 30px; } }
 
+@media screen and (max-width: 768px) { #main-header .logo_container { margin-right: 15px; } }
+
+@media screen and (max-width: 375px) { #main-header .logo_container { margin-right: 7px; } }
+
 #main-header .logo_container #logo { max-width: 100%; }
 
 @media screen and (max-width: 1140px) { #main-header .logo_container #logo { max-height: 30%; } }
@@ -150,6 +154,8 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 @media screen and (min-width: 981px) { #main-header .header-content { border-bottom: 1px solid #3c353d; padding: 19px 0; } }
 
 @media screen and (max-width: 980px) { #main-header .header-content { -webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; max-width: 50%; } }
+
+@media screen and (max-width: 700px) { #main-header .header-content { max-width: 100%; } }
 
 #main-header #et-top-navigation { padding: 0 !important; }
 
@@ -182,7 +188,9 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 #main-header #et_mobile_nav_menu .mobile_menu_bar:hover:before { color: #d950ef; }
 
-#main-header #et_mobile_nav_menu #mobile_menu { border-top-color: #d950ef; top: 7.2rem; }
+#main-header #et_mobile_nav_menu #mobile_menu { background: #fff; border-top-color: #d950ef; top: 7.2rem; }
+
+#main-header #et_mobile_nav_menu #mobile_menu li a { color: #0b030d; }
 
 #main-header .calendar { background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABsUlEQVRIibWUMUtcQRSFP40RF0QhqIQFN412CzY2BtKksgxY5AckldjYCQGblLGwsBUsVKxki2CZpEgsDCRLdhtDioClIhsQNip6wujZ3fHlqVu8PTDMnDtn7rvvzp2LpOSYllSXtJGylzbeSzqWVEzupYm31EL/PY7zkfZNcr8HeME1ToGvQB8thP1JoJ//cQIcRfwhMAQUmxbdxIyk9YjnJFWUjqqkkYgv+HwT3YlongLLQAV464jHUqIOGA+xWb8HrANTNxSJaM4lzUkaljQh6cstUTewa13Qz/p8E126utbOIJmWTNHjuQqsZuj31VXVOD2lNh9Mu6OUVi0DwG+PRdt2zHfMlyJNwJbXP25LSwPhY0+8fuQ5b1vNfCjSBDw2/3Of8zow7/V3z++AYeDQfBMoR2dWgJJf+J3Og2Dbf/DXto9AL3Bm/g34GZ357JZxmXSedqE12z6Zl83L5mvRO8E6+dydF5opkmkJeAY8cNcLeAnkfB+4ipYj/Wv3oIt2nBfcPkM7/eVqGXQ17LtaCtaWrUlHBjlv+xFli04+/0bLPQA+ZBjzc2C0c/0c+AcGe7ODsJNFFAAAAABJRU5ErkJggg==") no-repeat center; background-size: 21px 21px; float: left; height: 23px; position: relative; top: -5px; width: 23px; }
 
@@ -218,7 +226,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 #main-header #et-info { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 0; }
 
-@media screen and (min-width: 630px) and (max-width: 980px) { #main-header #et-info { -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
+@media screen and (min-width: 700px) and (max-width: 980px) { #main-header #et-info { -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
 
 @media screen and (max-width: 630px) { #main-header #et-info { margin-right: 15px; } }
 
@@ -226,9 +234,9 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 @media screen and (max-width: 1440px) { #main-header .maillist { max-width: 225px; } }
 
-@media screen and (max-width: 474px) { #main-header .maillist { display: none; } }
+@media screen and (max-width: 590px) { #main-header .maillist { display: none; } }
 
-#main-header .maillist input[type="email"] { background: #29222a; border-radius: 30px; border: none; color: #fff; height: 47px; line-height: 47px; font-size: 15px; font-weight: 300; max-width: 100%; text-transform: uppercase; padding: 0 60px 0 30px; }
+#main-header .maillist input[type="email"] { background: #29222a; border-radius: 30px; border: none; color: #fff; font-size: 15px; font-weight: 300; height: 47px; line-height: 47px; max-width: 100%; padding: 0 60px 0 30px; text-transform: uppercase; }
 
 #main-header .maillist input[type="email"]::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.5); }
 
@@ -240,7 +248,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 @media screen and (max-width: 1440px) { #main-header .maillist input[type="email"] { font-size: 13px; height: 40px; line-height: 38px; padding: 0 40px 0 15px; } }
 
-#main-header .maillist input[type="submit"], #main-header .maillist .wpcf7-submit { background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAA90lEQVQ4jb2Uva5BQRSFlxtRKW6j9gQSya3VGo2H0IrOW+i5r6DTUKI/D6BUaEUjGj4Z2SOTiX/GSvbJyey9vpWZ85MDZpJqSqO5CyAR/KQfScOE/KHcBoAGsORzWhpTPsBVEegB+zfAe2MUPdddBsBvEPQHZC/AM/N6jmMOZM0V0AyaeaANrB8Ar202H/ibxkTR8AgoB4MloA8cLoAP1isF82VjnBUHOG2BLlAIjFVgHMyMbc33C+bZxrBLAV6L6NhcVawUHcfiGuRWgNc0enjhyzC9Z37mS55I+rf7lqT6I6av/CqS6isBu4T8nQvoSNokgG8kdY6IVdie9OLVhAAAAABJRU5ErkJggg==) no-repeat center; border: none; height: 47px; position: absolute; right: 10px; font-size: 0; color: transparent; width: 40px; }
+#main-header .maillist input[type="submit"], #main-header .maillist .wpcf7-submit { background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAA90lEQVQ4jb2Uva5BQRSFlxtRKW6j9gQSya3VGo2H0IrOW+i5r6DTUKI/D6BUaEUjGj4Z2SOTiX/GSvbJyey9vpWZ85MDZpJqSqO5CyAR/KQfScOE/KHcBoAGsORzWhpTPsBVEegB+zfAe2MUPdddBsBvEPQHZC/AM/N6jmMOZM0V0AyaeaANrB8Ar202H/ibxkTR8AgoB4MloA8cLoAP1isF82VjnBUHOG2BLlAIjFVgHMyMbc33C+bZxrBLAV6L6NhcVawUHcfiGuRWgNc0enjhyzC9Z37mS55I+rf7lqT6I6av/CqS6isBu4T8nQvoSNokgG8kdY6IVdie9OLVhAAAAABJRU5ErkJggg==) no-repeat center; border: none; color: transparent; height: 47px; position: absolute; right: 10px; font-size: 0; width: 40px; }
 
 #main-header .maillist input[type="submit"]:hover, #main-header .maillist .wpcf7-submit:hover { color: #d950ef; }
 
@@ -249,6 +257,32 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 #main-header .maillist .ajax-loader { display: none; }
 
 #main-header .maillist .wpcf7-response-output { display: none !important; }
+
+#main-header .shortcode { border-top: 1px solid #333; margin: 0 5%; padding-top: 24px; position: relative; }
+
+@media screen and (min-width: 591px) { #main-header .shortcode { display: none; } }
+
+#main-header .shortcode input[type="email"] { background: #29222a; border-radius: 30px; border: none; color: #fff; font-size: 15px; font-weight: 300; height: 47px; line-height: 47px; max-width: 100%; padding: 0 60px 0 30px; text-transform: uppercase; width: 100%; }
+
+#main-header .shortcode input[type="email"]::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.5); }
+
+#main-header .shortcode input[type="email"]:-moz-placeholder { color: rgba(255, 255, 255, 0.5); }
+
+#main-header .shortcode input[type="email"]::-moz-placeholder { color: rgba(255, 255, 255, 0.5); }
+
+#main-header .shortcode input[type="email"]:-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
+
+@media screen and (max-width: 1440px) { #main-header .shortcode input[type="email"] { font-size: 13px; height: 40px; line-height: 38px; padding: 0 40px 0 15px; } }
+
+#main-header .shortcode input[type="submit"], #main-header .shortcode .wpcf7-submit { background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAA90lEQVQ4jb2Uva5BQRSFlxtRKW6j9gQSya3VGo2H0IrOW+i5r6DTUKI/D6BUaEUjGj4Z2SOTiX/GSvbJyey9vpWZ85MDZpJqSqO5CyAR/KQfScOE/KHcBoAGsORzWhpTPsBVEegB+zfAe2MUPdddBsBvEPQHZC/AM/N6jmMOZM0V0AyaeaANrB8Ar202H/ibxkTR8AgoB4MloA8cLoAP1isF82VjnBUHOG2BLlAIjFVgHMyMbc33C+bZxrBLAV6L6NhcVawUHcfiGuRWgNc0enjhyzC9Z37mS55I+rf7lqT6I6av/CqS6isBu4T8nQvoSNokgG8kdY6IVdie9OLVhAAAAABJRU5ErkJggg==) no-repeat center; border: none; color: transparent; font-size: 0; height: 47px; position: absolute; right: 10px; width: 40px; }
+
+#main-header .shortcode input[type="submit"]:hover, #main-header .shortcode .wpcf7-submit:hover { color: #d950ef; }
+
+@media screen and (max-width: 1440px) { #main-header .shortcode input[type="submit"], #main-header .shortcode .wpcf7-submit { background-size: 20px; height: 38px; } }
+
+#main-header .shortcode .ajax-loader { display: none; }
+
+#main-header .shortcode .wpcf7-response-output { display: none !important; }
 
 #main-header .et-social-icons { line-height: 1; }
 
@@ -303,6 +337,8 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 @media screen and (max-width: 980px) { #main-footer #et-footer-nav a { font-size: 14px; } }
 
 @media screen and (max-width: 580px) { #main-footer #et-footer-nav a { font-size: 12px; } }
+
+#main-footer #et-footer-nav .shortcode { display: none; }
 
 #main-footer #footer-bottom { background: none; padding-bottom: 125px; }
 

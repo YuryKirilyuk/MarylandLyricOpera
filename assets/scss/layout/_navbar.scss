@@ -22,6 +22,8 @@
     position: relative;
     padding-left: 0;
     @media screen and (max-width: 1500px) {margin-right: 30px;}
+    @media screen and (max-width: 768px) {margin-right: 15px;}
+    @media screen and (max-width: 375px) {margin-right: 7px;}
     #logo {
       max-width: 100%;
       @media screen and (max-width: 1140px) {max-height: 30%;}
@@ -41,6 +43,9 @@
     @media screen and (max-width: 980px) {
       flex-direction: row-reverse;
       max-width: 50%;
+    }
+    @media screen and (max-width: 700px) {
+      max-width: 100%;
     }
   }//.header-content
 
@@ -112,8 +117,10 @@
     }
 
     #mobile_menu {
+      background: #fff;
       border-top-color: $pink;
       top: $headerHeightMobile;
+      li a {color: $dark;}
     }
   }//#et_mobile_nav_menu
 
@@ -197,7 +204,7 @@
     align-items: center;
     display: flex;
     padding: 0;
-    @media screen and (min-width: 630px) and (max-width: 980px) {
+    @media screen and (min-width: 700px) and (max-width: 980px) {
       transform: translateX(-50%);
     }
     @media screen and (max-width: 630px) {margin-right: 15px;}
@@ -208,20 +215,20 @@
     max-width: 275px;
     position: relative;
     @media screen and (max-width: 1440px) {max-width: 225px;}
-    @media screen and (max-width: 474px) {display: none;}
+    @media screen and (max-width: 590px) {display: none;}
 
     input[type="email"] {
       background: #29222a;
       border-radius: 30px;
       border: none;
       color: #fff;
-      height: 47px;
-      line-height: 47px;
       font-size: 15px;
       font-weight: 300;
+      height: 47px;
+      line-height: 47px;
       max-width: 100%;
-      text-transform: uppercase;
       padding: 0 60px 0 30px;
+      text-transform: uppercase;
       @include placeholder {color: rgba(255,255,255,.5);}
       @media screen and (max-width: 1440px) {
         font-size: 13px;
@@ -234,11 +241,11 @@
     .wpcf7-submit {
       background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAA90lEQVQ4jb2Uva5BQRSFlxtRKW6j9gQSya3VGo2H0IrOW+i5r6DTUKI/D6BUaEUjGj4Z2SOTiX/GSvbJyey9vpWZ85MDZpJqSqO5CyAR/KQfScOE/KHcBoAGsORzWhpTPsBVEegB+zfAe2MUPdddBsBvEPQHZC/AM/N6jmMOZM0V0AyaeaANrB8Ar202H/ibxkTR8AgoB4MloA8cLoAP1isF82VjnBUHOG2BLlAIjFVgHMyMbc33C+bZxrBLAV6L6NhcVawUHcfiGuRWgNc0enjhyzC9Z37mS55I+rf7lqT6I6av/CqS6isBu4T8nQvoSNokgG8kdY6IVdie9OLVhAAAAABJRU5ErkJggg==) no-repeat center;
       border: none;
+      color: transparent;
       height: 47px;
       position: absolute;
       right: 10px;
       font-size: 0;
-      color: transparent;
       width: 40px;
       &:hover {color: $pink;}
       @media screen and (max-width: 1440px) {
@@ -252,6 +259,60 @@
     .wpcf7-response-output {display: none !important;}
 
   }//.maillist
+
+
+  .shortcode {
+    border-top: 1px solid #333;
+    margin: 0 5%;
+    padding-top: 24px;
+    position: relative;
+    @media screen and (min-width: 591px) {display: none;}
+
+    input[type="email"] {
+      background: #29222a;
+      border-radius: 30px;
+      border: none;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 300;
+      height: 47px;
+      line-height: 47px;
+      max-width: 100%;
+      padding: 0 60px 0 30px;
+      text-transform: uppercase;
+      width: 100%;
+      @include placeholder {color: rgba(255,255,255,.5);}
+      @media screen and (max-width: 1440px) {
+        font-size: 13px;
+        height: 40px;
+        line-height: 38px;
+        padding: 0 40px 0 15px;
+      }
+    }
+    input[type="submit"],
+    .wpcf7-submit {
+      background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAA90lEQVQ4jb2Uva5BQRSFlxtRKW6j9gQSya3VGo2H0IrOW+i5r6DTUKI/D6BUaEUjGj4Z2SOTiX/GSvbJyey9vpWZ85MDZpJqSqO5CyAR/KQfScOE/KHcBoAGsORzWhpTPsBVEegB+zfAe2MUPdddBsBvEPQHZC/AM/N6jmMOZM0V0AyaeaANrB8Ar202H/ibxkTR8AgoB4MloA8cLoAP1isF82VjnBUHOG2BLlAIjFVgHMyMbc33C+bZxrBLAV6L6NhcVawUHcfiGuRWgNc0enjhyzC9Z37mS55I+rf7lqT6I6av/CqS6isBu4T8nQvoSNokgG8kdY6IVdie9OLVhAAAAABJRU5ErkJggg==) no-repeat center;
+      border: none;
+      color: transparent;
+      font-size: 0;
+      height: 47px;
+      position: absolute;
+      right: 10px;
+      width: 40px;
+      &:hover {color: $pink;}
+      @media screen and (max-width: 1440px) {
+        background-size: 20px;
+        height: 38px;
+      }
+    }
+
+    .ajax-loader {display: none;}
+
+    .wpcf7-response-output {display: none !important;}
+
+
+  }//.shortcode
+
 
   .et-social-icons {
     line-height: 1;
