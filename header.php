@@ -301,7 +301,7 @@
 						<span class="mobile_menu_bar et_pb_header_toggle et_toggle_<?php echo esc_attr( et_get_option( 'header_style', 'left' ) ); ?>_menu"></span>
 					<?php endif; ?>
 
-                    <a href="#" class="calendar"></a>
+                    <a href="/MDLO/events/" class="calendar"></a>
 
 					<?php if ( ( false !== et_get_option( 'show_search_icon', true ) && ! $et_slide_header ) || is_customize_preview() ) : ?>
 					<div id="et_top_search">
