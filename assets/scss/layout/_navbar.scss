@@ -38,7 +38,7 @@
     justify-content: space-between;
     @media screen and (min-width: 981px) {
       border-bottom: 1px solid #3c353d;
-      padding: 19px 0;
+      //padding: 19px 0;
     }
     @media screen and (max-width: 980px) {
       flex-direction: row-reverse;
@@ -51,25 +51,32 @@
 
   #et-top-navigation {
     padding: 0 !important;
+    @media screen and (min-width: 981px) {
+      align-items: center;
+      display: flex;
+    }
   }
 
   #top-menu {
     margin-right: 40px;
     @media screen and (max-width: 1500px) {margin-right: 20px;}
-    .menu-item {
+    > .menu-item {
       @media screen and (max-width: 1500px) {padding-right: 10px;}
+      &.menu-item-has-children a:after {content: none;}
 
-      a {
+      > a {
         color: #fff;
         font-size: 20px;
         font-weight: 300;
+        line-height: 47px;
         opacity: 1 !important;
         padding-bottom: 0;
         position: relative;
         text-transform: uppercase;
+        @media screen and (min-width: 981px) {padding: 19px 0;}
         &:after {
           background: transparent;
-          bottom: -41px;
+          bottom: 0;
           content: '';
           height: 1px;
           left: 0;
@@ -103,6 +110,15 @@
       }//&.current-menu-item
 
     }//.menu-item
+
+    .sub-menu {
+      border-color: $pink;
+      left: -40px;
+      a {
+        font-size: 14px;
+        text-transform: none;
+      }
+    }
 
   }//#top-menu
 
@@ -150,6 +166,7 @@
   #et_top_search {
     color: #fff;
     margin-top: 0;
+    @media screen and (min-width: 769px) {height: 18px;}
     #et_search_icon {transition: all .3s; &:hover {color: $pink;}}
   }
 
