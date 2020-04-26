@@ -1,0 +1,226 @@
+.performance-hero-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  @media screen and (min-width: 981px) {
+    align-items: center;
+    display: flex;
+    height: 480px;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 90px;
+    //font-weight: 400;
+    letter-spacing: -3px;
+    padding-bottom: 0;
+  }
+
+}//.performance-hero-title
+
+
+
+.section-announcement {
+  color: #060606;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+
+  p {padding-bottom: 0;}
+  strong {font-weight: 500;}
+
+}//.section-announcement
+
+
+
+.section-performance-dates {
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+
+  .et_pb_row {
+    @media screen and (max-width: 1100px) {
+      justify-content: center;
+      width: 95%;}
+  }
+  .et_pb_column {
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    margin: 15px;
+    max-width: 320px;
+    @media screen and (max-width: 980px) {width: 47% !important;}
+    @media screen and (max-width: 550px) {width: 100% !important;}
+    &:hover {
+      .et_pb_text:first-child {background: #55185f;}
+      .et_pb_text:nth-child(2) {
+        background: $violet;
+        color: #fff;
+      }
+      h4 {color: #fff;}
+      .et_pb_button_module_wrapper {background: $violet;}
+      .et_pb_button {
+        background: #fff;
+        color: #000;
+      }
+    }
+
+    .et_pb_text:first-child {
+      background: #0b030d;
+      color: #fff;
+      padding: 47px 25px 35px;
+      transition: $default-transition;
+      h4 {
+        color: $pink;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: -2px;
+        margin-bottom: 3px;
+      }
+    }
+
+    .et_pb_text:nth-child(2) {
+      padding: 25px 20px;
+      transition: $default-transition;
+    }
+
+    .et_pb_button_module_wrapper {transition: $default-transition;}
+    .et_pb_button {
+      background: $violet;
+      border-radius: 30px;
+      border: none;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      height: 55px;
+      line-height: 55px !important;
+      margin-bottom: 35px;
+      padding: 0 !important;
+      text-transform: uppercase;
+      width: 137px;
+    }
+
+  }//.et_pb_column
+
+}//.section-performance-dates
+
+
+
+.section-performance-title {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -2px;
+  padding: 10px 0 !important;
+}//.section-performance-title
+
+
+.section-performance-info {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+  padding-top: 5px !important;
+
+  .title-row {
+    @media screen and (min-width: 981px) {
+      &:before {
+        background: $violet;
+        content: '';
+        height: 1px;
+        position: absolute;
+        top: 55px;
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 1200px) { &:before {top: 50px;} }
+
+    .et_pb_column:first-child .et_pb_text:first-child .et_pb_text_inner {padding-right: 30px;}
+    .et_pb_column:last-child .et_pb_text:first-child .et_pb_text_inner {padding-left: 30px;}
+
+  }//.title-row
+
+  .title-row .et_pb_text:first-child {
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    position: relative;
+    @media screen and (max-width: 980px) {
+      &:before {
+        background: $violet;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+    }
+
+    .et_pb_text_inner {
+      background: #fff;
+      display: inline-block;
+    }
+  }//.et_pb_text:first-child
+
+
+  table {
+    border: none !important;
+    color: #000;
+    font-size: 18px;
+    width: 100%;
+    td {
+      border: none;
+      line-height: 1;
+    }
+    td:first-child {
+      padding-left: 0;
+      width: 145px;
+    }
+    td:last-child {
+      color: $violet;
+      font-weight: 600;
+    }
+  }//table
+
+  small {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+
+}//.section-performance-info
+
+
+.et_section_specialty {
+  > .et_pb_row {
+    max-width: 1815px;
+    width: 95%;
+    > .et_pb_column {
+      @media screen and (min-width: 769px) {
+        width: 40%;
+        &:first-child {width: 20%;}
+      }
+      &:nth-child(2) {padding: 0;}
+    }
+  }
+  .et_pb_column {
+    padding: 5px;
+  }
+
+
+  .et_pb_image {
+    height: 100%;
+    .et_pb_image_wrap {
+      display: block;
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+
+
+
+}//.et_section_specialty
