@@ -54,18 +54,21 @@
       @media screen and (max-width: 680px) {width: 48%;}
     }
   }
+
   .et_pb_team_member {
     margin-bottom: 30px;
     max-width: 300px;
     overflow: hidden;
+    transition: none;
     width: 24%;
+    &:not(.popup) {cursor: pointer;}
     &:hover {
       .et_pb_team_member_image {filter: grayscale(0);}
       .et_pb_team_member_description {
         background: #000;
         .et_pb_module_header {color: #fff;}
         .et_pb_member_position {color: #d950ef;}
-        > div {transform: translateX(0);}
+        > div {transform: translateX(0) !important;}
       }
     }
     @media screen and (max-width: 980px) {width: 32%;}
@@ -76,14 +79,14 @@
       filter: grayscale(1);
       float: none;
       margin: 0;
-      transition: $default-transition;
+      transition: filter .3s;
       width: auto;
     }
     .et_pb_team_member_description {
       display: block;
       padding: 20px 10px 23px;
       text-align: center;
-      transition: $default-transition;
+      transition: background .3s;
       width: 100%;
       @media screen and (max-width: 425px) {padding: 10px 5px 15px;}
 
@@ -94,7 +97,7 @@
         line-height: 1.33;
         letter-spacing: -1px;
         padding-bottom: 3px;
-        transition: $default-transition;
+        transition: color .3s;
         @media screen and (max-width: 768px) {font-size: 22px;}
         @media screen and (max-width: 425px) {font-size: 20px;}
       }
@@ -104,29 +107,134 @@
         font-weight: 300;
         line-height: 1.43;
         letter-spacing: -1px;
-        transition: $default-transition;
+        transition: color .3s;
         @media screen and (max-width: 768px) {font-size: 14px;}
         @media screen and (max-width: 425px) {font-size: 13px;}
       }
-      > div {
-        background: #752182;
-        border-radius: 0 30px 30px 0;
-        bottom: 100%;
-        color: #fff;
-        font-size: 14px;
-        height: 32px;
-        left: 0;
-        line-height: 32px;
-        margin-bottom: 20px;
-        padding: 0 25px;
-        position: absolute;
-        text-transform: uppercase;
-        transform: translateX(-100%);
-        transition: $default-transition;
-        white-space: nowrap;
-        @media screen and (min-width: 425px) {letter-spacing: -1px;}
-        @media screen and (max-width: 768px) {font-size: 12px;}
-      }
     }//.et_pb_team_member_description
+
+    &:not(.popup) .et_pb_team_member_description > div {
+      background: #752182;
+      border-radius: 0 30px 30px 0;
+      bottom: 100%;
+      color: #fff;
+      font-size: 14px;
+      height: 32px;
+      left: 0;
+      line-height: 32px;
+      margin-bottom: 20px;
+      padding: 0 25px;
+      position: absolute;
+      text-transform: uppercase;
+      transform: translateX(-100%);
+      transition: $default-transition;
+      white-space: nowrap;
+      @media screen and (min-width: 425px) {letter-spacing: -1px;}
+      @media screen and (max-width: 768px) {font-size: 12px;}
+
+      p:not(:first-child) {display: none;}
+    }
+
+    &.popup {
+      align-items: center;
+      background: rgba(0,0,0,.85);
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      margin: 0;
+      max-width: 100%;
+      overflow: auto;
+      padding: 3%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: auto;
+      z-index: 999;
+
+      .et_pb_team_member_image {
+        background: #fff;
+        display: block;
+        filter: none;
+        height: 100%;
+        margin: 0;
+        max-height: 645px;
+        max-width: 510px;
+        padding: 60px 30px 60px 60px;
+        width: 100%;
+        img {
+          height: 100%;
+          max-height: 440px;
+          max-width: 400px;
+          object-fit: contain;
+          position: relative;
+          width: 100%;
+          z-index: 1;
+        }
+      }
+
+      .et_pb_team_member_description {
+        background: #fff;
+        height: 100%;
+        margin: 0;
+        max-height: 645px;
+        max-width: 835px;
+        padding: 60px 60px 60px 30px;
+        width: 100%;
+
+        .close {
+          background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAeklEQVRIibWVSQrAIBAE+5/5V74oBF+QiyLEHBLErWsueunqYZhFkqKkQ94ovFA/t9Hgx3MZNDm7Bl39qsGwbtZgOqFRwXIpe8LtJmgBbO37Bbnn4gWebnCNAk7Paw0sc6zmWLdgfY5NKLZbsK2I7XPsEqE39EKuvxQz3QxKgTNh2XYAAAAASUVORK5CYII=") no-repeat center;
+          cursor: pointer;
+          height: 23px;
+          opacity: .7;
+          position: absolute;
+          right: 19px;
+          top: 20px;
+          width: 23px;
+          &:hover {opacity: 1;}
+        }
+
+        .et_pb_module_header {
+          align-items: flex-end;
+          background: #752182;
+          color: #fff;
+          display: flex;
+          font-size: 45px;
+          font-weight: 600;
+          height: 130px;
+          text-align: left;
+          margin-top: -60px;
+          padding-bottom: 50px;
+          position: relative;
+          &:before {
+            background: #752182;
+            content: '';
+            position: absolute;
+            width: 130px;
+            height: 100%;
+            top: 0;
+            right: 100%;
+          }
+        }//.et_pb_module_header
+        .et_pb_member_position {
+          color: #fff;
+          font-size: 18px;
+          line-height: 1.27;
+          text-align: left;
+          transform: translateY(-55px);
+        }
+        > div {
+          font-size: 16px;
+          line-height: 1.5;
+          overflow: auto;
+          max-height: 430px;
+          padding: 0 20px 0 0;
+          text-align: justify;
+          p:first-child {display: none;}
+        }
+      }//.et_pb_team_member_description
+
+    }//.popup
+
   }//.et_pb_team_member
 }//.team-list

@@ -19,8 +19,13 @@ h1,h2,h3,h4,h5,h6 {
   clear: both;
 }
 
+.popup-open {
+  overflow: hidden;
+  height: 100% !important;
+}
+
 .et_pb_section {
-  background: transparent;
+  background-color: transparent;
 }
 .et_pb_row {
   max-width: $max-width;
