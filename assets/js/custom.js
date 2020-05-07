@@ -38,11 +38,12 @@ jQuery(function($){
     });
 */
 
-    $('.et_pb_team_member_description').prepend('<span class="close"></span>');
+    $('.et_pb_team_member_description, .et_pb_team_member_image').prepend('<span class="close"></span>');
 
     $('.et_pb_team_member').on('click', function(){
         var el = $(this);
         showPopup(el);
+
     });
     $('.et_pb_team_member .close').on('click', function(){
         var el = $(this);

@@ -135,6 +135,7 @@
       p:not(:first-child) {display: none;}
     }
 
+    //POPUP
     &.popup {
       align-items: center;
       background: rgba(0,0,0,.85);
@@ -151,6 +152,11 @@
       top: 0;
       width: auto;
       z-index: 999;
+      @media screen and (max-width: 699px) {
+        background: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
 
       .et_pb_team_member_image {
         background: #fff;
@@ -162,6 +168,20 @@
         max-width: 510px;
         padding: 60px 30px 60px 60px;
         width: 100%;
+        @media screen and (max-width: 980px) {
+          max-height: 570px;
+          max-width: 300px;
+          padding-right: 10px;
+          padding-left: 40px;
+        }
+        @media screen and (max-width: 767px) {max-width: 250px;}
+        @media screen and (max-width: 699px) {
+          max-width: 100%;
+          padding-right: 40px;
+          padding-bottom: 0;
+          padding-top: 20px;
+        }
+
         img {
           height: 100%;
           max-height: 440px;
@@ -170,8 +190,13 @@
           position: relative;
           width: 100%;
           z-index: 1;
+          @media screen and (max-width: 980px) {
+            height: auto;
+            max-height: 300px;
+          }
         }
-      }
+
+      }//.et_pb_team_member_image
 
       .et_pb_team_member_description {
         background: #fff;
@@ -181,17 +206,15 @@
         max-width: 835px;
         padding: 60px 60px 60px 30px;
         width: 100%;
-
-        .close {
-          background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAeklEQVRIibWVSQrAIBAE+5/5V74oBF+QiyLEHBLErWsueunqYZhFkqKkQ94ovFA/t9Hgx3MZNDm7Bl39qsGwbtZgOqFRwXIpe8LtJmgBbO37Bbnn4gWebnCNAk7Paw0sc6zmWLdgfY5NKLZbsK2I7XPsEqE39EKuvxQz3QxKgTNh2XYAAAAASUVORK5CYII=") no-repeat center;
-          cursor: pointer;
-          height: 23px;
-          opacity: .7;
-          position: absolute;
-          right: 19px;
-          top: 20px;
-          width: 23px;
-          &:hover {opacity: 1;}
+        @media screen and (max-width: 980px) {
+          max-height: 570px;
+          padding-left: 10px;
+          padding-right: 40px;
+        }
+        @media screen and (max-width: 699px) {
+          height: auto;
+          max-height: 100%;
+          padding-left: 40px;
         }
 
         .et_pb_module_header {
@@ -215,26 +238,86 @@
             top: 0;
             right: 100%;
           }
+          + div {margin-top: 25px;}
+
+          @media screen and (max-width: 980px) {
+            font-size: 36px;
+            height: 90px;
+            padding-bottom: 30px;
+          }
+          @media screen and (max-width: 767px) {
+            height: auto;
+            padding: 15px 0 30px;
+          }
+          @media screen and (max-width: 699px) {
+            margin-left: -40px;
+            margin-right: -40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            &:before {content: none;}
+          }
+
         }//.et_pb_module_header
+
         .et_pb_member_position {
           color: #fff;
           font-size: 18px;
           line-height: 1.27;
           text-align: left;
           transform: translateY(-55px);
+          @media screen and (max-width: 980px) {transform: translateY(-33px);}
         }
         > div {
           font-size: 16px;
           line-height: 1.5;
-          overflow: auto;
-          max-height: 430px;
-          padding: 0 20px 0 0;
           text-align: justify;
+          @media screen and (min-width: 700px) {
+
+            @media screen and (max-width: 980px) {max-height: 95%;}
+
+            overflow: auto;
+            max-height: 430px;
+            padding: 0 20px 0 0;
+
+            //Цвет дорожки, по которой двигается бегунок прокрутки.
+            &::-webkit-scrollbar-track {background-color: #e3e3e3;}
+            //Цвет бегунка полосы, а так же его закругление.
+            &::-webkit-scrollbar-thumb {
+              border-radius: 0;
+              background-color: $violet;
+            }
+            &::-webkit-scrollbar-thumb:hover{background-color: darken($violet, 5%);}
+            //Основная ширина полосы прокрутки.
+            &::-webkit-scrollbar{width: 2px;}
+
+          }
+
+          @media screen and (max-width: 767px) {font-size: 14px;}
+          @media screen and (max-width: 699px) {padding-bottom: 30px;}
+
           p:first-child {display: none;}
         }
       }//.et_pb_team_member_description
 
+
+
+      .close {
+        background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAeklEQVRIibWVSQrAIBAE+5/5V74oBF+QiyLEHBLErWsueunqYZhFkqKkQ94ovFA/t9Hgx3MZNDm7Bl39qsGwbtZgOqFRwXIpe8LtJmgBbO37Bbnn4gWebnCNAk7Paw0sc6zmWLdgfY5NKLZbsK2I7XPsEqE39EKuvxQz3QxKgTNh2XYAAAAASUVORK5CYII=") no-repeat center;
+        cursor: pointer;
+        height: 23px;
+        opacity: .7;
+        position: absolute;
+        right: 19px;
+        top: 20px;
+        width: 23px;
+        &:hover {opacity: 1;}
+        @media screen and (max-width: 980px) {right: 9px;}
+      }
+
+
+
     }//.popup
+
 
   }//.et_pb_team_member
 }//.team-list
