@@ -99,4 +99,17 @@ h1,h2,h3,h4,h5,h6 {
       width: 130px;
     }
   }
-}
+}//.page-title
+
+.search-results {
+  #main-content .container:before {content: none;}
+  #left-area {
+    float: none;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 !important;
+    width: 100%;
+
+    .post-meta {display: none;}
+  }
+}//.search-results

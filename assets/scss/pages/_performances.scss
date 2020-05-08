@@ -40,9 +40,8 @@
   line-height: 1.33;
 
   .et_pb_row {
-    @media screen and (max-width: 1100px) {
-      justify-content: center;
-      width: 95%;}
+    justify-content: center;
+    @media screen and (max-width: 1100px) {width: 95%;}
   }
   .et_pb_column {
     background: #fff;
@@ -51,13 +50,16 @@
     max-width: 320px;
     @media screen and (max-width: 980px) {width: 47% !important;}
     @media screen and (max-width: 550px) {width: 100% !important;}
+    &:first-child {
+      @media screen and (min-width: 981px) {margin-left: 0;}
+    }
     &:hover {
       .et_pb_text:first-child {background: #55185f;}
       .et_pb_text:nth-child(2) {
         background: $violet;
         color: #fff;
       }
-      h4 {color: #fff;}
+      h4 {color: #fff !important;}
       .et_pb_button_module_wrapper {background: $violet;}
       .et_pb_button {
         background: #fff;
@@ -164,6 +166,7 @@
   .synopsis-text {
     max-height: 525px;
     overflow: auto;
+    padding-right: 20px;
 
     //Цвет дорожки, по которой двигается бегунок прокрутки.
     &::-webkit-scrollbar-track {background-color: #e3e3e3;}
@@ -193,11 +196,12 @@
     }
     td:first-child {
       padding-left: 0;
-      width: 145px;
+      width: 45%;
     }
     td:last-child {
       color: $violet;
       font-weight: 600;
+      vertical-align: bottom;
     }
   }//table
 

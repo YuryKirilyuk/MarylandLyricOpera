@@ -110,4 +110,104 @@
 
   }//.et_pb_social_media_follow li
 
+  .et_pb_code {display: none;}
+
+
+  .sfsi_shortcode_container {
+    float: none;
+
+    .norm_row {
+      float: none;
+      margin: auto;
+      text-align: center !important;
+    }
+
+    .sfsi_wicons {
+      height: 53px !important;
+      margin: 10px !important;
+      padding-top: 0;
+      width: 53px !important;
+      &:hover .sficn {background: #282828 !important;}
+      .sficn {
+        background: $violet;
+        border-radius: 50%;
+        &:before {
+          color: #fff;
+          font-family: ETmodules!important;
+          speak: none;
+          font-style: normal;
+          font-weight: 400;
+          -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+          font-variant: normal;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-shadow: 0 0;
+          -webkit-transition: color .3s;
+          transition: color .3s;
+          z-index: 10;
+          height: 100%;
+          font-size: 28px;
+          line-height: 53px;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        &#sfsiid_facebook:before {content: "\e093";}
+        &#sfsiid_twitter:before {content: "\e094";}
+      }//.sficn
+
+      .sfcm.sfsi_wicon {
+        display: block;
+        opacity: 0;
+        //visibility: hidden;
+      }
+
+      .bot_arow {display: none;}
+
+      .sfsiTlleft {
+        box-shadow: none;
+        border: none;
+        background: none;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 59px !important;
+        display: block !important;
+        left: -3px;
+        top: -3px;
+        bottom: 0;
+        right: 0;
+        height: 59px;
+
+        .sfsi_inside {
+          float: none;
+          height: 100%;
+          div {
+            height: 100%;
+            display: block;
+            margin: 0 !important;
+            width: 100%;
+            a {
+              display: block;
+              height: 100%;
+              width: 100%;
+              img {
+                display: block;
+                height: 100%;
+                opacity: 0;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }//.sfsiTlleft
+
+    }//.sfsi_wicons
+
+  }//.sfsi_shortcode_container
+
 }//.section-share

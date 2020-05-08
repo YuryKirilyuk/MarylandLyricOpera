@@ -29,15 +29,6 @@ jQuery(window).resize(function() {
 
 jQuery(function($){
 
-/*
-
-	$('.et_pb_team_member').on('click', function(){
-	    $('body').toggleClass('popup-open');
-	    $(this).toggleClass('popup').parents('.et_pb_section').css('z-index','10');
-
-    });
-*/
-
     $('.et_pb_team_member_description, .et_pb_team_member_image').prepend('<span class="close"></span>');
 
     $('.et_pb_team_member').on('click', function(){
@@ -63,11 +54,21 @@ jQuery(function($){
 
 
 
-	$('.button-nav').click(function(){
-		$(this).toggleClass('active');
-		$('.main-nav-list').slideToggle(); 
-		return false;
-	});
+
+   var  $fb =  $('.section-share .et-social-facebook'),
+        $tw =  $('.section-share .et-social-twitter'),
+        fbLink = $('#sfsiid_facebook a').attr('href'),
+        twLink = $('#sfsiid_twitter a').attr('href');
+
+        $fb.find('.icon').attr('href', fbLink);
+        $tw.find('.icon').attr('href', twLink);
+
+
+
+
+
+
+
 
 
 	/*
