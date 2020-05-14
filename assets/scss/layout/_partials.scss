@@ -27,9 +27,16 @@ h1,h2,h3,h4,h5,h6 {
 .et_pb_section {
   background-color: transparent;
 }
+
 .et_pb_row {
   max-width: $max-width;
   @media screen and (max-width: 425px) {width: 90%;}
+}
+
+.et_pb_text a {
+  font-weight: 500;
+  text-decoration: underline;
+  &:hover {text-decoration: none;}
 }
 
 .section-title {
@@ -113,3 +120,11 @@ h1,h2,h3,h4,h5,h6 {
     .post-meta {display: none;}
   }
 }//.search-results
+
+.et_post_gallery {
+  .et_pb_gallery_item {
+    margin-right: .5% !important;
+    margin-bottom: .5% !important;
+    width: 49.5% !important;
+  }
+}//.et_post_gallery

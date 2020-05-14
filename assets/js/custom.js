@@ -66,6 +66,20 @@ jQuery(function($){
 
 
 
+        $('.section-upcoming-shows .et_pb_button').on('click', function(e){
+            e.preventDefault();
+            return false;
+        });
+
+
+        /*
+        $('.more-text').on('click', function(e){
+            e.preventDefault();
+            $('.hidden-content').slideToggle();
+        });
+        */
+
+
 
 
 

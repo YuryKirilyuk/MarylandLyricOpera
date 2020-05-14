@@ -43,6 +43,13 @@
         }
       }
 
+      small {
+        display: block;
+        line-height: 1;
+        font-size: 27px;
+        letter-spacing: 0;
+      }
+
     }//.et_pb_slide_description
 
   }//.et_pb_slide
@@ -80,6 +87,7 @@
   }//.more
   .btn {
     @extend .more;
+    cursor: default;
     background: #752182;
     border-color: #752182;
     &:hover {

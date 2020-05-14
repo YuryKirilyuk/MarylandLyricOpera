@@ -329,6 +329,10 @@
 
                         <div class="maillist">
                             <?php echo do_shortcode( '[contact-form-7 id="34" title="Join Mailing List"]' ); ?>
+
+
+                            <div><h1 color="#000">Get the latest from Maryland Lyric Opera</h1><form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC26C94E6757E03A39EF3EF7934E9941D15BC871663E61ECA67B4F017B501B0835BB85CFCC7C3C2CEB4114FCADFA21F6AD53"><div><div><label>First Name </label><input aria-label="First Name" id="fieldyhujhtd" maxlength="200" name="cm-f-yhujhtd" required=""></div><div><label>Last Name </label><input aria-label="Last Name" id="fieldyhujhth" maxlength="200" name="cm-f-yhujhth" required=""></div><div><label>Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-gutdhh-gutdhh" required="" type="email"></div></div><button type="submit">Subscribe</button></form></div><script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+
                         </div>
 
                         <?php
