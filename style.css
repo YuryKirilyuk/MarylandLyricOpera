@@ -145,7 +145,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 #main-header .et_menu_container:after { content: none; }
 
-@media screen and (max-width: 1024px) { #main-header .et_menu_container { padding: 0 20px !important; } }
+@media screen and (max-width: 1130px) { #main-header .et_menu_container { padding: 0 15px !important; } }
 
 @media screen and (max-width: 980px) { #main-header .et_menu_container { height: 7.2rem; width: 100%; } }
 
@@ -273,7 +273,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 #main-header .maillist input[type="email"]:-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
 
-@media screen and (max-width: 1540px) { #main-header .maillist input[type="email"] { font-size: 13px; height: 40px; line-height: 38px; min-width: 225px; padding: 4px 40px 0 15px; } }
+@media screen and (max-width: 1540px) { #main-header .maillist input[type="email"] { font-size: 13px; height: 40px; line-height: 38px; min-width: 225px; padding: 3px 40px 0 15px; } }
 
 #main-header .maillist button[type="submit"], #main-header .maillist input[type="submit"], #main-header .maillist .wpcf7-submit { background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAA90lEQVQ4jb2Uva5BQRSFlxtRKW6j9gQSya3VGo2H0IrOW+i5r6DTUKI/D6BUaEUjGj4Z2SOTiX/GSvbJyey9vpWZ85MDZpJqSqO5CyAR/KQfScOE/KHcBoAGsORzWhpTPsBVEegB+zfAe2MUPdddBsBvEPQHZC/AM/N6jmMOZM0V0AyaeaANrB8Ar202H/ibxkTR8AgoB4MloA8cLoAP1isF82VjnBUHOG2BLlAIjFVgHMyMbc33C+bZxrBLAV6L6NhcVawUHcfiGuRWgNc0enjhyzC9Z37mS55I+rf7lqT6I6av/CqS6isBu4T8nQvoSNokgG8kdY6IVdie9OLVhAAAAABJRU5ErkJggg==) no-repeat center; border: none; color: transparent; height: 47px; font-size: 0; position: absolute; right: 10px; top: 0; width: 40px; }
 
@@ -313,7 +313,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 #main-header .et-social-icons { line-height: 1; }
 
-@media screen and (max-width: 1250px) { #main-header .et-social-icons { display: none; } }
+@media screen and (max-width: 1100px) { #main-header .et-social-icons { display: none; } }
 
 @media screen and (max-width: 1540px) { #main-header .et-social-icons li { margin-left: 10px; } }
 
@@ -395,6 +395,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
   .admin-bar .section-hero-slider .et_pb_slide { height: calc(100vh - 7.2rem - 32px); } }
 
 @media screen and (max-width: 782px) { .admin-bar .section-hero-slider .et_pb_slide { height: calc(100vh - 7.2rem - 46px); } }
+
+.section-hero-slider .et_pb_slide .et_pb_container.et_pb_empty_slide { display: table; }
+
+.section-hero-slider .et_pb_slide .et_pb_slider_container_inner { display: table-cell; }
 
 .section-hero-slider .et_pb_slide .et_pb_slide_description { max-width: 1370px; padding: 0; }
 
@@ -485,6 +489,8 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 @media screen and (max-width: 650px) { .section-upcoming-shows .et_pb_blurb { margin-bottom: 10px !important; text-align: center; } }
 
 .section-upcoming-shows .et_pb_blurb_content { overflow: hidden; }
+
+.section-upcoming-shows .et_pb_blurb_content:hover .et_pb_main_blurb_image { box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3); }
 
 @media screen and (max-width: 650px) { .section-upcoming-shows .et_pb_blurb_content { display: inline-block; max-width: 416px; } }
 
@@ -837,11 +843,17 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 .section-share .sfsi_shortcode_container .sfsi_wicons .sfsiTlleft .sfsi_inside div a img { display: block; height: 100%; opacity: 0; width: 100%; }
 
-.performance-hero-title { color: #fff; font-size: 30px; font-weight: 300; }
+.performance-hero-title { color: #fff; font-size: 30px; font-weight: 300; line-height: 1.5; }
 
 @media screen and (min-width: 981px) { .performance-hero-title { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 480px; } }
 
-.performance-hero-title h1 { color: #fff; font-size: 90px; letter-spacing: -3px; padding-bottom: 0; }
+.performance-hero-title h1 { color: #fff; font-size: 90px; letter-spacing: -3px; margin-bottom: 15px; padding-bottom: 0; }
+
+@media screen and (max-width: 768px) { .performance-hero-title h1 { font-size: 80px; } }
+
+@media screen and (max-width: 580px) { .performance-hero-title h1 { font-size: 70px; } }
+
+@media screen and (max-width: 475px) { .performance-hero-title h1 { font-size: 52px; } }
 
 .section-announcement { color: #060606; font-size: 24px; font-weight: 300; line-height: 1.5; }
 
@@ -883,7 +895,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 .section-performance-dates .et_pb_column .et_pb_button { background: #752182; border-radius: 30px; border: none; color: #fff; font-size: 17px; font-weight: 600; height: 55px; line-height: 55px !important; margin-bottom: 35px; padding: 0 !important; text-transform: uppercase; width: 137px; }
 
-.section-performance-title { color: #fff; font-weight: 400; letter-spacing: -2px; padding: 10px 0 !important; }
+.section-performance-title { color: #fff; font-weight: 400; letter-spacing: -2px; line-height: 1.3; padding: 35px 0 !important; }
 
 .section-performance-info { font-size: 16px; font-weight: 100; line-height: 1.5; padding-top: 5px !important; }
 
@@ -917,7 +929,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 .section-performance-info table td:first-child { padding-left: 0; width: 45%; }
 
-.section-performance-info table td:last-child { color: #752182; font-weight: 600; vertical-align: bottom; }
+.section-performance-info table td:last-child { color: #752182; font-weight: 500; vertical-align: bottom; }
 
 .section-performance-info small { color: #000; font-size: 14px; font-weight: 300; }
 
@@ -963,6 +975,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 .section-for-press .et_pb_button:hover { background: transparent; color: #752182; line-height: 34px !important; padding: 0 !important; }
 
 .section-for-press .hidden-content { display: none; }
+
+.section-quote { background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA2CAYAAAB0pZEqAAAFYElEQVRogb2baYyeUxTHf+87rShKI1QQS1WtQfiAqgpt7Yk1sVWqCBpLgy6W4gOilpJaU0sTFG1lPlSjJUSipB8qGJTKCDKhsdQww5joMqbNmZwnefrM3Z7lPv9kPsxz7r3/9/8+dzn3nPM2Zo26nxowCrga+BZYXAdhBmOAa4A24M0hEYlk7POBG4HTgAbwM9AKbInIm2AocLHyj9dnvwIrYogeAdwA3ATsl7F1AXsB6yPwJthVhd4C7JOx/S2zrkrRIvZW/dstY/sNuAN4DeivkDONXYCZFv5fgHuARUBfFaKb+mZlc9gjY9sKPAXcB/xTAZcJDd0vHtJZlEYfMA94EOhNHpYVfRDwCnCywdYBTAE+LsnhgiyfhcDpBls7cBnwRdZQRvR5Ol2HG2zvAJN1DcfCRNmJgd0NthUq+F9Tx2ZBwnuBtyyCV+muGVPwdOA9i+BlwEU2wRR40y3AM8A0i/0bPab+yzluKBq6du+02D/SN7zZNUge0SL4VeAKi70buECPhRgQwc85vvAOfcObfAOFTm+f4H61fR84Xl74BG/SGfZnyGAhohu6Q9oEC+7WzSsW5jkEo2fzV6GDhYh+ALjKYf8MeCyUsABuBm532JcDC/IM6BMtu/AcT5vbInpZpwDzHfa/1DHKBZfofYEXPP1bIzofI9QPaHG0maUubi7YRCfr2HQOJtis/nQsPGu4sKTxKfBykYFtoq8EzvT0lWn3YxHSAJzr2TjRzbPQsjKJHgbM9fT7Q52EGJB78BOeNvKW3y9KYBI9U9ezC49HdELkHn6Ip83CMgRZ0XInneHp06+OSgzILLsroF1rGZKs6GsNF/As2jTsEgNTgZGeNuuAzjIkadFD9Mz1IdYR1RIwywSflyVKi54EHBDQp70sqQUSCBgd0O67skRp0ZMD+3SUJbVgSmC73M5IFolo2UAuDOyzsSypAcP1WhqCUuuZlGgJvewc2Ke7LKkBZ+kXH4LegDZOJEGECTn6TMtMsU5dZ5+U+EIm5WgrntpJqf+79B6/JnQWFBFtu9XI+f0h8KKeo305xpyYo63rmrtG+Re5QkYyvXcCjs5B6hprguaqJOw6LrDfyMBdOwQnAC/pCXO264OO0VtVlThSg3SzA9oeUTG34EBgpUZcBmkT0YdGIE3GfgR42NPusEj8qLMjU3074fLBDo5Iit65pzvsVU1tG8T/2O6Lb+olIzZkmh1jsfl8/Sogy+yM5J+mJUtRNYZqCNeEOvjRJMXAaVWXaPRsHW94HuqUlIVs2JegomO4lTZMNTz7v0b+gTO+WYVblwOmszOGW2vDqcCOInpDjaR7618apW9NObADcJSI/qlGUrTSKI1YEVUbRjc1vVonshtnW838w5pa2xUrn2xCNla91pVAj4CtTa3pWl0jabbgRvg/qJG/KwkiLK+R1JTDXlIjf3siemnO+29R/GBJnC8LTaiXRGda9Aat1ImNlZbn4iA9WQN/a7KmE8yNmGdO4ErHzK/hzH6aTAj467I5Ig/eBr502Hs0jxYLr2t2ZFBaZ7ZW6laNXq0LCflgSyPw/54u4ciKFj/48gilydfrJhaC63TWVQXRcmna3TalalfrbaSq9S2RkzdytO/Ri0nol+TCFg0Zr0o/tFUiLNYwi7cQzUMoMfJHC/RdrzeidSX4u7V+dVBa11Vos0Qv/msLEEqZ1Vjg+QJ9E4jwE7XKOC+kpu1Y4F2T0VdSJWnR4/T3D74Uab+WREgZ1vEqvCx6NPAwTit7XUtuo75V+enEOa5EY94fruyvgiSCKbkv+RADXo5mF2IVsifYU2fQ4ZqkkCJ6KRCQS5OklfxRIGAbWYAFfScNSKUAAAAASUVORK5CYII="); background-position: center 37px; background-repeat: no-repeat; background-size: auto; padding: 95px 0 50px !important; }
+
+.section-quote cite { font-size: 19px; line-height: 1.47; text-align: right; display: block; font-weight: 300; color: #858585; font-style: normal; }
 
 @media screen and (min-width: 981px) { .section-video .fluid-width-video-wrapper { padding-top: 63.2963% !important; } }
 

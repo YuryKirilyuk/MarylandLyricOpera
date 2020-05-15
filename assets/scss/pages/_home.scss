@@ -11,6 +11,9 @@
       .admin-bar & {height: calc(100vh - #{$headerHeightMobile} - 46px);}
     }
 
+    .et_pb_container.et_pb_empty_slide {display: table;}
+    .et_pb_slider_container_inner {display: table-cell;}
+
     .et_pb_slide_description {
       max-width: 1370px;
       padding: 0;
@@ -207,6 +210,7 @@
   }
   .et_pb_blurb_content {
     overflow: hidden;
+    &:hover .et_pb_main_blurb_image {box-shadow: 0 0 20px 5px rgba(0,0,0,.3);}
     @media screen and (max-width: 650px) {
       display: inline-block;
       max-width: 416px;

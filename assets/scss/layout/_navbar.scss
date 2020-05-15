@@ -8,7 +8,7 @@
     padding: 0 30px !important;
     height: $headerHeight;
     &:after {content: none;}
-    @media screen and (max-width: 1024px) {padding: 0 20px !important;}
+    @media screen and (max-width: 1130px) {padding: 0 15px !important;}
     @media screen and (max-width: 980px) {
       height: $headerHeightMobile;
       width: 100%;
@@ -254,7 +254,7 @@
         height: 40px;
         line-height: 38px;
         min-width: 225px;
-        padding: 4px 40px 0 15px;
+        padding: 3px 40px 0 15px;
       }
     }
     button[type="submit"],
@@ -339,7 +339,7 @@
 
   .et-social-icons {
     line-height: 1;
-    @media screen and (max-width: 1250px) {display: none;}
+    @media screen and (max-width: 1100px) {display: none;}
     li {
       @media screen and (max-width: 1540px) {margin-left: 10px;}
     }
