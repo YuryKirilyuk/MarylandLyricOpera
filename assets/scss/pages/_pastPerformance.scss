@@ -1,3 +1,50 @@
 .past-performaces {
 
+  .et_pb_column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .et_pb_blurb  {
+      background: #fff;
+      margin-bottom: 3% !important;
+      padding: 30px 30px 20px;
+      transition: all .3s;
+      width: 48.6%;
+      &:hover {
+        box-shadow: 0 0 15px -5px rgba(0, 0, 0, .2);
+        .et_pb_main_blurb_image {filter: grayscale(0);}
+      }
+      @media screen and (max-width: 980px) {padding: 20px 20px 10px;}
+      @media screen and (max-width: 650px) {width: 100%;}
+
+      .et_pb_main_blurb_image {
+        filter: grayscale(1);
+        height: 337px;
+        transition: filter .3s;
+        .et_pb_image_wrap {
+          display: block;
+          height: 100%;
+          img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+      }
+    }//.et_pb_blurb
+
+    .et_pb_module_header {
+      color: #101010;
+      font-size: 26px;
+      letter-spacing: -1.5px;
+      line-height: 1.23;
+      text-align: center;
+      @media screen and (max-width: 980px) {font-size: 22px;}
+
+      span {white-space: normal;}
+    }
+
+  }//.et_pb_column
+
 }//.past-performaces

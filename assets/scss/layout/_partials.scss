@@ -128,3 +128,23 @@ h1,h2,h3,h4,h5,h6 {
     width: 49.5% !important;
   }
 }//.et_post_gallery
+
+#commentform .submit {
+  background: $violet;
+  border: 2px solid $violet;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: normal;
+  height: 72px;
+  letter-spacing: 0;
+  line-height: 68px !important;
+  margin-top: 55px;
+  padding: 0 45px !important;
+  text-transform: uppercase;
+  &:hover {
+    background: transparent;
+    color: $violet;
+  }
+}

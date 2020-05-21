@@ -19,20 +19,21 @@
       padding: 0;
 
       .et_pb_slide_title {
-        font-size: 140px;
+        font-size: 116px;
         font-weight: 500 !important;
         letter-spacing: -5px;
         line-height: 1;
         padding-bottom: 0;
         @media screen and (min-width: 768px) {margin-bottom: -25px;}
-        @media screen and (max-width: 1300px) {font-size: 120px !important;}
+        //@media screen and (max-width: 1300px) {font-size: 120px !important;}
         @media screen and (max-width: 980px) {font-size: 100px !important;}
         @media screen and (max-width: 767px) {font-size: 80px !important;}
         @media screen and (max-width: 475px) {font-size: 52px !important;}
         @media screen and (max-width: 425px) {
           text-align: center;
         }
-      }
+        a {color: #fff !important;}
+      }//.et_pb_slide_title
       .et_pb_slide_content {
         color: #bcbcbc;
         font-size: 40px;
@@ -188,12 +189,18 @@
   .et_pb_row:last-child {
     background: #fff;
     padding: 40px 30px;
-    @media screen and (max-width: 1200px) {padding: 20px 10px;}
-    @media screen and (max-width: 1024px) {width: 95%;}
+    @media screen and (min-width: 651px) {display: flex;}
+    @media screen and (max-width: 1200px) {
+      padding: 20px 10px;
+      width: 95%;
+    }
 
     .et_pb_column {
       padding: 0 10px;
       @media screen and (min-width: 651px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 0;
         width: 33.3333%;
       }
@@ -209,8 +216,8 @@
     }
   }
   .et_pb_blurb_content {
-    overflow: hidden;
-    &:hover .et_pb_main_blurb_image {box-shadow: 0 0 20px 5px rgba(0,0,0,.3);}
+    //overflow: hidden;
+    &:hover .et_pb_main_blurb_image {box-shadow: 0 0 15px 5px rgba(0,0,0,.25);}
     @media screen and (max-width: 650px) {
       display: inline-block;
       max-width: 416px;
@@ -218,7 +225,10 @@
   }
 
     .et_pb_main_blurb_image {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: $default-transition;
       width: 100%;
       img {
         @media screen and (min-width: 651px) { width: 100%;}
@@ -227,40 +237,35 @@
 
     .et_pb_module_header {
       font-size: 26px;
+      font-weight: normal;
       letter-spacing: -1px;
       line-height: 1.23;
-      font-weight: normal;
-      text-align: center;
       padding: 0 15px;
+      text-align: center;
       @media screen and (max-width: 1200px) {font-size: 22px;}
       @media screen and (min-width: 651px) and (max-width: 1024px) {font-size: 18px;}
       span {white-space: normal;}
     }
 
     .et_pb_blurb_description {
-      animation: fadeIn 5s cubic-bezier(.77,0,.175,1) 1;
-      position: absolute;
-      top: 0;
-      color: #fff;
-      width: 220px;
-      text-align: center;
-      background: $violet;
-      border-radius: 50%;
-      height: 220px;
-      padding: 110px 25px 25px 110px;
-      display: flex;
       align-items: center;
-      justify-content: center;
-      transform: translate(-50%, -50%);
+      animation: fadeIn 5s cubic-bezier(.77,0,.175,1) 1;
+      background: rgba($violet, .7);
+      bottom: 9%;
+      color: #fff;
+      display: flex;
       font-size: 18px;
       font-weight: 300;
+      height: 67px;
+      justify-content: center;
+      left: 0;
       line-height: 1;
-      @media screen and (max-width: 1024px) {
-        font-size: 14px;
-        height: 170px;
-        padding: 85px 20px 20px 85px;
-        width: 170px;
-      }
+      padding: 20px;
+      position: absolute;
+      text-align: center;
+      width: 80%;
+      @media screen and (min-width: 651px) and (max-width: 1300px) {height: 50px;}
+      @media screen and (min-width: 651px) and (max-width: 980px) {font-size: 14px;}
     }
 
   .et_pb_button {
@@ -401,7 +406,7 @@
       }
 
       .et_pb_team_member_description {
-        padding: 30px 26px;
+        padding: 30px 15px;
         transition: $default-transition;
         @media screen and (min-width: 581px) {
           border: 1px solid #efefef;
@@ -410,7 +415,7 @@
         @media screen and (max-width: 767px) {padding: 20px 15px;}
         @media screen and (max-width: 580px) {text-align: left;}
         div {
-          color: #727227;
+          color: #727272;
           font-size: 14px;
           font-weight: 300;
           line-height: 1.5;
