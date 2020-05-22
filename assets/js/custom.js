@@ -55,12 +55,12 @@ jQuery(function($){
     });
 
 	function showPopup(el){
-        $('body').addClass('popup-open');
+        //$('body').addClass('popup-open');
         el.addClass('popup').parents('.et_pb_row, .et_pb_section').css('z-index','10');
     }
 
 	function hidePopup(el){
-        $('body').removeClass('popup-open');
+        //$('body').removeClass('popup-open');
         el.closest('.et_pb_team_member ').removeClass('popup').parents('.et_pb_row, .et_pb_section').css('z-index','0');
     }
 

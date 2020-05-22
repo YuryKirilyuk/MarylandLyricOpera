@@ -378,12 +378,18 @@
 
 
       .et_pb_team_member_image {
+        height: 238px;
         margin-bottom: 0;
         margin-right: 0;
         max-width: 100%;
         @media screen and (min-width: 581px) {
           border: 1px solid transparent;
           border-bottom: none;
+        }
+        img {
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
         }
       }
 

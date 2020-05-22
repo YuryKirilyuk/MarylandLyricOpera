@@ -16,8 +16,8 @@
     margin-bottom: 15px;
     padding-bottom: 0;
     @media screen and (max-width: 768px) {font-size: 80px;}
-    @media screen and (max-width: 580px) {font-size: 70px;}
-    @media screen and (max-width: 475px) {font-size: 52px;}
+    @media screen and (max-width: 580px) {font-size: 60px;}
+    @media screen and (max-width: 475px) {font-size: 50px;}
   }
 
 }//.performance-hero-title
@@ -118,6 +118,9 @@
   letter-spacing: -2px;
   line-height: 1.3;
   padding: 35px 0 !important;
+  @media screen and (max-width: 600px) {
+    p {font-size: 40px;}
+  }
 }//.section-performance-title
 
 
@@ -177,6 +180,11 @@
     &.h-600 {max-height: 600px;}
     &.h-650 {max-height: 650px;}
     &.h-700 {max-height: 700px;}
+    &.h-750 {max-height: 750px;}
+    &.h-800 {max-height: 800px;}
+    &.h-850 {max-height: 850px;}
+    &.h-900 {max-height: 900px;}
+    &.h-950 {max-height: 950px;}
 
     //Цвет дорожки, по которой двигается бегунок прокрутки.
     &::-webkit-scrollbar-track {background-color: #e3e3e3;}

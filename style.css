@@ -119,6 +119,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 #commentform .submit:hover { background: transparent; color: #752182; }
 
+.has-underlayer:before { background: #000; bottom: 0; content: ''; left: 0; opacity: .6; position: absolute; right: 0; top: 0; }
+
+.et_pb_video .et_pb_video_play { font-size: 6rem; }
+
 .menu-toggle { background: none; border: none; position: relative; height: 7rem; width: 7rem; }
 
 @media screen and (min-width: 768px) { .menu-toggle { display: none; } }
@@ -570,9 +574,11 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
   .section-recent-performances .et_pb_column:last-child .et_pb_team_member:hover .et_pb_team_member_description { background: #101010; }
   .section-recent-performances .et_pb_column:last-child .et_pb_team_member:hover .et_pb_team_member_description div { color: #7c7c7c; } }
 
-.section-recent-performances .et_pb_column:last-child .et_pb_team_member .et_pb_team_member_image { margin-bottom: 0; margin-right: 0; max-width: 100%; }
+.section-recent-performances .et_pb_column:last-child .et_pb_team_member .et_pb_team_member_image { height: 238px; margin-bottom: 0; margin-right: 0; max-width: 100%; }
 
 @media screen and (min-width: 581px) { .section-recent-performances .et_pb_column:last-child .et_pb_team_member .et_pb_team_member_image { border: 1px solid transparent; border-bottom: none; } }
+
+.section-recent-performances .et_pb_column:last-child .et_pb_team_member .et_pb_team_member_image img { height: 100%; -o-object-fit: cover; object-fit: cover; width: 100%; }
 
 .section-recent-performances .et_pb_column:last-child .et_pb_team_member .et_pb_module_header { color: #272727; font-size: 20px; font-weight: 500; line-height: 1.15; padding-bottom: 5px; transition: all 0.3s linear; }
 
@@ -877,9 +883,9 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 @media screen and (max-width: 768px) { .performance-hero-title h1 { font-size: 80px; } }
 
-@media screen and (max-width: 580px) { .performance-hero-title h1 { font-size: 70px; } }
+@media screen and (max-width: 580px) { .performance-hero-title h1 { font-size: 60px; } }
 
-@media screen and (max-width: 475px) { .performance-hero-title h1 { font-size: 52px; } }
+@media screen and (max-width: 475px) { .performance-hero-title h1 { font-size: 50px; } }
 
 .section-announcement { color: #060606; font-size: 24px; font-weight: 300; line-height: 1.5; }
 
@@ -923,6 +929,8 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 .section-performance-title { color: #fff; font-weight: 400; letter-spacing: -2px; line-height: 1.3; padding: 35px 0 !important; }
 
+@media screen and (max-width: 600px) { .section-performance-title p { font-size: 40px; } }
+
 .section-performance-info { font-size: 16px; font-weight: 100; line-height: 1.5; padding-top: 5px !important; }
 
 @media screen and (min-width: 981px) { .section-performance-info .title-row:before { background: #752182; content: ''; height: 1px; position: absolute; top: 55px; width: 100%; } }
@@ -950,6 +958,16 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 .section-performance-info .synopsis-text.h-650 { max-height: 650px; }
 
 .section-performance-info .synopsis-text.h-700 { max-height: 700px; }
+
+.section-performance-info .synopsis-text.h-750 { max-height: 750px; }
+
+.section-performance-info .synopsis-text.h-800 { max-height: 800px; }
+
+.section-performance-info .synopsis-text.h-850 { max-height: 850px; }
+
+.section-performance-info .synopsis-text.h-900 { max-height: 900px; }
+
+.section-performance-info .synopsis-text.h-950 { max-height: 950px; }
 
 .section-performance-info .synopsis-text::-webkit-scrollbar-track { background-color: #e3e3e3; }
 
