@@ -42,6 +42,12 @@ jQuery(function($){
         return false;
     });
 
+    $('#louis').on('click', function(){
+        var el = $('#louisS');
+        showPopup(el);
+        return false;
+    });
+
     $('.single-bio .et_pb_button').on('click', function(){
         var el = $('.single-bio .et_pb_team_member');
         showPopup(el);
@@ -66,6 +72,17 @@ jQuery(function($){
 
 
 
+    $('.section-upcoming-shows .et_pb_button, .section-performance-dates .et_pb_button, .et_pb_slide .btn').on('click', function(e){
+        e.preventDefault();
+        $('.info-popup').css('display','flex').fadeIn();
+        $('.underlayer').fadeIn();
+    });
+    $('.info-popup .popup-close, .underlayer').on('click', function(){
+        $('.info-popup').fadeOut().css('display','none');
+        $('.underlayer').fadeOut();
+    });
+
+
 
 
    var  $fb =  $('.section-share .et-social-facebook'),
@@ -79,14 +96,8 @@ jQuery(function($){
 
 
 
-        $('.section-upcoming-shows .et_pb_button').on('click', function(e){
-            e.preventDefault();
-            return false;
-        });
-
         $('.section-upcoming-shows .et_pb_blurb').each(function(){
             var $item = $(this);
-
             $item.find('.et_pb_main_blurb_image').append($item.find('.et_pb_blurb_description'));
         });
 

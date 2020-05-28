@@ -27,8 +27,8 @@
 .section-who-we-are {
   background: #f5f5f5;
   padding-top: 40px !important;
-  margin-bottom: 75px;
-  padding-bottom: 115px !important;
+  //margin-bottom: 75px;
+  //padding-bottom: 115px !important;
 }//section-who-we-are
 
 .team-list {
@@ -59,6 +59,14 @@
   }
 
 }//.team-list
+
+.hidden-team {
+  overflow: hidden;
+  padding: 0 !important;
+  .team-list {
+    position: absolute;
+  }
+}
 
 .team-list .et_pb_team_member,
 .single-bio .et_pb_team_member {

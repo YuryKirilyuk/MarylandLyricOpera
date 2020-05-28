@@ -30,8 +30,9 @@
   font-weight: 300;
   line-height: 1.5;
 
-  p {padding-bottom: 0;}
   strong {font-weight: 500;}
+
+  .et_pb_divider + .et_pb_text p {padding-bottom: 0;}
 
 }//.section-announcement
 
@@ -42,6 +43,8 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
+  padding-bottom: 35px !important;
+  padding-top: 35px !important;
 
   .et_pb_row {
     justify-content: center;
@@ -52,24 +55,27 @@
     border: 1px solid #d8d8d8;
     margin: 15px;
     max-width: 320px;
+    transition: $default-transition;
     @media screen and (max-width: 980px) {width: 47% !important;}
     @media screen and (max-width: 550px) {width: 100% !important;}
     &:first-child {
       @media screen and (min-width: 981px) {margin-left: 0;}
     }
     &:hover {
+      background: $violet;
       .et_pb_text:first-child {background: #55185f;}
-      .et_pb_text:nth-child(2) {
-        background: $violet;
+      .et_pb_text:nth-child(2),
+      .et_pb_text:last-child {
+        //background: $violet;
         color: #fff;
       }
       h4 {color: #fff !important;}
-      .et_pb_button_module_wrapper {background: $violet;}
+      //.et_pb_button_module_wrapper {background: $violet;}
       .et_pb_button {
         background: #fff;
         color: #000;
       }
-    }
+    }//.et_pb_column:hover
 
     .et_pb_text:first-child {
       background: #0b030d;
@@ -104,6 +110,12 @@
       padding: 0 !important;
       text-transform: uppercase;
       width: 137px;
+    }
+
+    .et_pb_button_module_wrapper + .et_pb_text:last-child {
+      font-size: 14px;
+      padding: 0 20px 35px;
+      transition: $default-transition;
     }
 
   }//.et_pb_column
@@ -185,6 +197,7 @@
     &.h-850 {max-height: 850px;}
     &.h-900 {max-height: 900px;}
     &.h-950 {max-height: 950px;}
+    &.h-1000 {max-height: 1000px;}
 
     //Цвет дорожки, по которой двигается бегунок прокрутки.
     &::-webkit-scrollbar-track {background-color: #e3e3e3;}
@@ -199,8 +212,6 @@
 
     //Основная ширина полосы прокрутки.
     &::-webkit-scrollbar{width: 2px;}
-
-
 
     h2 {margin: 30px 0 10px;}
 
@@ -224,6 +235,7 @@
     td:last-child {
       color: $violet;
       font-weight: 500;
+      line-height: 1.3;
       vertical-align: bottom;
     }
   }//table
@@ -250,31 +262,39 @@
 
 
   [id^="popup"] {
-    background: #fff;
+    background: rgba(0,0,0,.8);
     bottom: 0;
     box-shadow: 0 0 50px -5px;
-    height: 80vh;
+    height: 100vh;
     display: none;
     left: 0;
     margin: auto !important;
-    max-width: 800px;
     padding: 40px;
     position: fixed;
     right: 0;
     overflow: hidden;
     top: 0;
-    width: 90%;
+    width: 100%;
     z-index: 999;
     &.show {display: block;}
 
     .et_pb_blurb_content {
-      height: 100%;
-      max-width: 100%;
+      background: #fff;
+      bottom: 0;
+      height: 80vh;
+      left: 0;
+      margin: auto;
+      max-width: 800px;
+      padding: 40px;
+      position: absolute;
+      right: 0;
+      top: 0;
+
       .et_pb_main_blurb_image {
         cursor: pointer;
         position: absolute;
-        right: -33px;
-        top: -30px;
+        right: 7px;
+        top: 7px;
         margin: 0;
       }
       .et_pb_blurb_container {
@@ -311,6 +331,8 @@
   > .et_pb_row {
     max-width: 1815px;
     width: 95%;
+    @media screen and (min-width: 769px) {display: flex;}
+
     > .et_pb_column {
       @media screen and (min-width: 769px) {
         width: 40%;
@@ -319,25 +341,62 @@
       &:nth-child(2) {padding: 0;}
     }
   }
-  .et_pb_column {
-    padding: 5px;
-  }
+
+  .et_pb_column {padding: 5px;}
 
 
   .et_pb_image {
     height: 100%;
+    overflow: hidden;
     .et_pb_image_wrap {
       display: block;
       height: 100%;
       img {
         height: 100%;
         object-fit: cover;
+        transition: all 4s;
         width: 100%;
       }
     }
+    &:hover img {transform: scale(1.2);}
   }//.et_pb_image
 
 
+  ~ .et_section_specialty {
+    > .et_pb_row > .et_pb_column {
+      @media screen and (min-width: 769px) {
+        &:first-child {width: 40%;}
+        &:last-child {width: 20%;}
+      }
+    }
+  }
+
+  ~ .images {
+    > .et_pb_row {
+      max-width: 1815px;
+      width: 95%;
+      @media screen and (min-width: 769px) {display: flex;}
+    }
+
+    .et_pb_column {padding: 5px;}
+
+    .et_pb_image {
+      height: 100%;
+      overflow: hidden;
+      .et_pb_image_wrap {
+        display: block;
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+          transition: all 4s;
+          width: 100%;
+        }
+      }
+      &:hover img {transform: scale(1.2);}
+    }//.et_pb_image
+
+  }
 
 }//.et_section_specialty
 

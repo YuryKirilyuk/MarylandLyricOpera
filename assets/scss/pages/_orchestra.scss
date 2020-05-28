@@ -1,4 +1,15 @@
 .section-orchestra {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.55;
+  padding-top: 50px !important;
+
+  .lead {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.33;
+  }
+  strong {font-weight: 500;}
 
   .et_pb_image {
     height: 160px;

@@ -1,3 +1,14 @@
 .post-content-inner.et_multi_view_hidden {display: block !important;}
 
-.et_pb_posts .et_pb_post .et_pb_row {padding: 0;}
+.et_pb_posts:not(.blog-our-news) .et_pb_post .et_pb_row {padding: 0;}
+
+.blog-our-news {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.55;
+  padding-top: 50px !important;
+
+  .et_pb_section {padding: 0;}
+}
+
+.et_pb_post .post-content .et_pb_section {padding: 0;}
