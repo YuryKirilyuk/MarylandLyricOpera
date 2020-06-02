@@ -1,0 +1,57 @@
+.section-donation {
+
+  #dgx-donate-container {
+    background: none;
+    margin: 0;
+  }
+
+  .dgx-donate-form-section {border: 1px solid #752182 !important;}
+
+  [id*="dgx_donate_giving_level"] input,
+  #dgx-donate-other-radio {
+    margin-left: 0;
+    position: relative;
+    top: -4px;
+  }
+  input[type="checkbox"] {
+    margin-left: 0;
+    position: relative;
+    top: -3px;
+  }
+
+  input[type="text"] {border-radius: 0;}
+
+  .other-donation-level label {
+    margin-right: 10px;
+    width: auto;
+  }
+
+  #_dgx_donate_donor_first_name,
+  #_dgx_donate_donor_last_name,
+  #_dgx_donate_donor_email {
+    margin-bottom: 20px;
+  }
+
+  #_dgx_donate_user_amount {margin: 0;}
+
+  .dgx-donate-pay-enabled input {
+    background: $violet;
+    border: 1px solid $violet;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    height: 34px;
+    line-height: 34px;
+    min-width: 101px;
+    padding: 0 20px;
+    transition: $default-transition;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      background: transparent;
+      color: $violet;
+    }
+  }
+
+}//.section-donation
