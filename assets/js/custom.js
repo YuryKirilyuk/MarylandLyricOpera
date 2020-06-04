@@ -72,7 +72,7 @@ jQuery(function($){
 
 
 
-    $('.section-upcoming-shows .et_pb_button, .section-performance-dates .et_pb_button, .et_pb_slide .btn').on('click', function(e){
+    $('.section-upcoming-shows .et_pb_button, .section-performance-dates .et_pb_button, .et_pb_slide .btn, .section-calendar .et_pb_button ').on('click', function(e){
         e.preventDefault();
         $('.info-popup').css('display','flex').fadeIn();
         $('.underlayer').fadeIn();

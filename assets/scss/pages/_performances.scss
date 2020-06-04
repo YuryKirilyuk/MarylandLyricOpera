@@ -29,6 +29,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 1.5;
+  @media screen and (max-width: 475px) {font-size: 20px;}
 
   strong {font-weight: 500;}
 
@@ -38,7 +39,7 @@
 
 
 
-.section-performance-dates {
+#main-content .section-performance-dates {
   color: #000;
   font-size: 18px;
   font-weight: 300;
@@ -48,7 +49,9 @@
 
   .et_pb_row {
     justify-content: center;
+    display: flex;
     @media screen and (max-width: 1100px) {width: 95%;}
+    @media screen and (max-width: 768px) {flex-wrap: wrap;}
   }
   .et_pb_column {
     background: #fff;
@@ -57,7 +60,13 @@
     max-width: 320px;
     transition: $default-transition;
     @media screen and (max-width: 980px) {width: 47% !important;}
-    @media screen and (max-width: 550px) {width: 100% !important;}
+    @media screen and (max-width: 768px) {min-width: 320px;}
+    @media screen and (max-width: 550px) {
+      float: none;
+      margin: 15px auto !important;
+      min-width: 290px;
+      width: 100% !important;
+    }
     &:first-child {
       @media screen and (min-width: 981px) {margin-left: 0;}
     }
@@ -66,11 +75,9 @@
       .et_pb_text:first-child {background: #55185f;}
       .et_pb_text:nth-child(2),
       .et_pb_text:last-child {
-        //background: $violet;
         color: #fff;
       }
       h4 {color: #fff !important;}
-      //.et_pb_button_module_wrapper {background: $violet;}
       .et_pb_button {
         background: #fff;
         color: #000;
@@ -154,6 +161,7 @@
       }
     }
     @media screen and (max-width: 1200px) { &:before {top: 50px;} }
+    @media screen and (max-width: 475px) {width: 90%;}
 
     .et_pb_column:first-child .et_pb_text:first-child .et_pb_text_inner {padding-right: 30px;}
     .et_pb_column:last-child .et_pb_text:first-child .et_pb_text_inner {padding-left: 30px;}
@@ -446,5 +454,11 @@
   }
   .et_pb_column:last-child {
     @media screen and (min-width: 981px) {width: 53.5% !important;}
+  }
+}
+
+.section-video {
+  .et_pb_row {
+    @media screen and (max-width: 500px) {width: 100%;}
   }
 }
