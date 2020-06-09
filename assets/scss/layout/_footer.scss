@@ -56,25 +56,37 @@
 
   #et-footer-nav {
     background: none;
-    @media screen and (max-width: 475px) {display: none;}
+    @media screen and (max-width: 499px) {display: none;}
 
     #menu-main-menu {
       border-bottom: 1px solid rgba(212,212,212,.15);
+      display: flex;
+      justify-content: center;
       margin-bottom: 10px;
       text-align: center;
+      > li {
+        position: relative;
+        @media screen and (max-width: 768px) {padding-right: 10px;}
+        > a {white-space: nowrap;}
+      }
       li:last-child {padding-right: 0;}
     }
-    .current-menu-item a {
+    .menu-item {
+      vertical-align: top;
+      text-align: left;
+    }
+    .current-menu-item > a {
       color: #ac15c4;
-      position: relative;
+      //position: relative;
       &:after {
         background: $pink;
-        position: absolute;
-        bottom: -26px;
-        left: 0;
+        bottom: -16px;
         content: '';
         height: 1px;
-        width: 100%;
+        left: 0;
+        right: 22px;
+        position: absolute;
+        //width: 100%;
       }
     }
     a {
@@ -86,10 +98,31 @@
       &:hover {color: #fff;}
       @media screen and (max-width: 980px) {font-size: 14px;}
       @media screen and (max-width: 580px) {font-size: 12px;}
+
+      br {display: none;}
     }
 
+    .sub-menu {
+
+      a {
+        font-size: 12px;
+        text-transform: none;
+      }
+
+      li {
+        display: block;
+        padding-right: 0;
+        @media screen and (max-width: 980px) {font-size: 12px;}
+      }
+
+      .sub-menu {padding-left: 10px;}
+
+    }//.sub-menu
+
     .shortcode {display: none;}
-  }
+
+  }//#et-footer-nav
+
 
   #footer-bottom {
     background: none;
@@ -106,6 +139,7 @@
       color: #c7c7c7;
       font-weight: 300;
       margin-top: 10px;
+      text-align: center;
     }
   }
 
@@ -123,9 +157,12 @@
 
 
 .lightmix {
-  color: #fff;
+  color: #fff !important;
+  display: inline-block;
   font-size: 12px;
-  opacity: .5;
+  font-weight: 100 !important;
+  margin-top: 20px;
+  opacity: .7;
   width: 100%;
-  &:hover {opacity: 1;}
+  &:hover {opacity: 1 !important;}
 }

@@ -20,6 +20,8 @@
     @media screen and (max-width: 475px) {font-size: 50px;}
   }
 
+  small {font-size: 0.7em;}
+
 }//.performance-hero-title
 
 
@@ -454,6 +456,7 @@
   }
   .et_pb_column:last-child {
     @media screen and (min-width: 981px) {width: 53.5% !important;}
+    //@media screen and (min-width: 981px) {width: 40.5% !important;}
   }
 }
 

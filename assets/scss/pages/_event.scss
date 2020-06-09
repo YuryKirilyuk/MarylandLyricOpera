@@ -67,12 +67,17 @@
       color: $pink;
       padding-bottom: 10px;
     }
+    p {padding: 0;}
+    small {
+      font-size: 14px;
+      opacity: .7;
+    }
   }
 
 
   .et_pb_column:nth-child(2) {
     padding-bottom: 20px;
-    padding-top: 35px;
+    padding-top: 25px;
     @media screen and (max-width: 980px) {
       margin: 0;
       padding: 20px;
@@ -103,9 +108,12 @@
     color: #101010;
     font-size: 22px;
     font-weight: 100;
+    line-height: 1.1;
     margin-bottom: 15px;
     padding: 0;
     @media screen and (max-width: 500px) {font-size: 20px;}
+
+    strong {font-weight: 500;}
   }
 
 

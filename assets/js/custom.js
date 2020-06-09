@@ -48,6 +48,24 @@ jQuery(function($){
         return false;
     });
 
+    $('#William_Stone').on('click', function(){
+        var el = $('#WilliamStone');
+        showPopup(el);
+        return false;
+    });
+
+    $('#Husan_Park').on('click', function(){
+        var el = $('#HusanPark');
+        showPopup(el);
+        return false;
+    });
+
+    $('#Christopher_Koelzer').on('click', function(){
+        var el = $('#ChristopherKoelzer');
+        showPopup(el);
+        return false;
+    });
+
     $('.single-bio .et_pb_button').on('click', function(){
         var el = $('.single-bio .et_pb_team_member');
         showPopup(el);
