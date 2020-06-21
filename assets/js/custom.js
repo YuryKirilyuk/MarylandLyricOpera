@@ -90,6 +90,7 @@ jQuery(function($){
 
 
 
+    //COVID-19 info popup
     $('.section-upcoming-shows .et_pb_button, .section-performance-dates .et_pb_button, .et_pb_slide .btn, .section-calendar .et_pb_button ').on('click', function(e){
         e.preventDefault();
         $('.info-popup').css('display','flex').fadeIn();
@@ -97,6 +98,17 @@ jQuery(function($){
     });
     $('.info-popup .popup-close, .underlayer').on('click', function(){
         $('.info-popup').fadeOut().css('display','none');
+        $('.underlayer').fadeOut();
+    });
+
+    //subscribe popup
+    $('.maillist, .menu-item.shortcode').on('click', function(e){
+        e.preventDefault();
+        $('.subscribe-popup').css('display','flex').fadeIn();
+        $('.underlayer').fadeIn();
+    });
+    $('.subscribe-popup .popup-close, .underlayer').on('click', function(){
+        $('.subscribe-popup').fadeOut().css('display','none');
         $('.underlayer').fadeOut();
     });
 

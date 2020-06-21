@@ -254,8 +254,18 @@
 
 
   .maillist {
+    cursor: pointer;
     max-width: 275px;
     position: relative;
+    &:before {
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
     @media screen and (max-width: 1540px) {max-width: 225px;}
     @media screen and (max-width: 590px) {display: none;}
 
@@ -313,6 +323,15 @@
     margin: 0 5%;
     padding-top: 24px;
     position: relative;
+    &:before {
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
     @media screen and (min-width: 591px) {display: none;}
 
     input[type="email"] {
